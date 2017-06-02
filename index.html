@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/theme/black.css">
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fontAwesome/css/font-awesome.min.css">
     <!-- Printing and PDF exports -->
     <script>
     var link = document.createElement('link');
@@ -54,30 +54,49 @@
     #design_scss {
         background-color: rgba(72, 31, 21, 0.5);
     }
-    #mail_a a{
-    	color: rgba(255,255,255,0.4);
+    
+    #mail_a a {
+        color: rgba(255, 255, 255, 0.4);
     }
-    #mail_a a:hover{
-		color:#42affa;
+    
+    #mail_a a:hover {
+        color: #42affa;
     }
-    #blog{
-    	color: #036458;
-    	opacity: 1;
-    	font-size: 30px;
+    
+    #blog {
+        color: #036458;
+        opacity: 1;
+        font-size: 30px;
     }
-    #blog:hover{
-		color: #008a75;
-		opacity: 0.8;
+    
+    #blog:hover {
+        color: #008a75;
+        opacity: 0.8;
     }
-    #mail_a1{
-
+    
+    #mail_a1 {}
+    
+    #mail_a1 a {
+        color: #036458;
     }
-    #mail_a1 a{
-    color: #036458;	
+    
+    #mail_a1 a:hover {
+        color: #008a75;
+        opacity: 0.8;
     }
-    #mail_a1 a:hover{
-		color: #008a75;
-		opacity: 0.8;
+    .iconLink{
+    	padding: 20px;
+    }
+    .iconLink i{
+    	position: relative;
+    	margin: 0 10px;
+    }
+    .iconLink a{
+    	display: inline-block;
+    	width: 23px;
+		height: 23px;
+    	position: absolute;
+    	left: 0;
     }
     </style>
 </head>
@@ -85,7 +104,7 @@
 <body>
     <div class="reveal">
         <div class="slides">
-<!--             <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+            <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 					<img  id="Avatar" src="300px-Lagrange_multiplier.png">
 					<h3 id="pg_title"><span style="padding: 0 30px 0 0">杨</span><span>兵</span></h3>
 					<p style="font-size: 16px;color: rgba(255,255,255,0.7);">
@@ -116,14 +135,18 @@
                 <div class="design" style="margin: -20px 0 0 0">
                 	<a href=""></a>
                 </div>
-            </section> -->
+            </section>
             <section data-transition="slide" data-background="#1DA691" data-background-transition="zoom">
-            	<h3 style="text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9;
+                <h3 style="text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9;
     text-align: center;font-size: 50px;margin: -30px 0 0 0;">关于更多</h3>
-    			<h3 style="text-decoration: none;
-    transition: 0.5s;margin: 0"><a href="https://yukiflandre.github.io/" id="blog">个人博客</a></h3>
-    			<div style="font-size: 15px" id="mail_a1"><span style="color: #036458">Email : </span><a style="font-size: 16px;" href="mailto:nagatoyukiloveflandre@gmail.com">nagatoyukiloveflandre@gmail.com</a></div>
-    			<i class="fa fa-github" aria-hidden="true"><a href="https://github.com/yukiflandre"></a></i>
+                <h3 style="text-decoration: none;
+    transition: 0.5s;margin: 0"><a href="https://yukiflandre.github.io/" id="blog">非技术博客</a></h3>
+                <div style="font-size: 15px" id="mail_a1"><span style="color: #036458">Email : </span><a style="font-size: 16px;" href="mailto:nagatoyukiloveflandre@gmail.com">nagatoyukiloveflandre@gmail.com</a></div>
+				<div class="iconLink" style="padding: 20px 0 0 0;font-size: 23px">
+                <i class="fa fa-github" aria-hidden="true"><a href="https://github.com/yukiflandre" style=""></a></i>
+                <i class="fa fa-twitter" aria-hidden="true"><a href="javascript:void(0);" onclick="js_method()"></a></i><i class="fa fa-stack-overflow" aria-hidden="true"><a href="https://stackoverflow.com/users/6093108/hazemiku"></a></i><i class="fa fa-google-plus" aria-hidden="true"><a href="https://plus.google.com/115795581138637943844?hl=zh-CN"></a></i>
+				<i class="fa fa-weibo" aria-hidden="true"><a href="javascript:void(0);" onclick="js_method()"></a></i>
+				</div>
             </section>
         </div>
     </div>
@@ -149,6 +172,10 @@
             }
         }]
     });
+
+    // function js_method(){
+    // 	alert("这些账户都不活跃，所以就暂时放着了")
+    // }
     </script>
 </body>
 
