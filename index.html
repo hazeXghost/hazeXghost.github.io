@@ -1,79 +1,154 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>yangbing-resume</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>yangbing</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <style type="text/css">
+    #Avatar {
+        width: 130px;
+        height: 130px;
+        border: 1px solid #ace2d9;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+    
+    #pg_title {
+        text-shadow: 1px 2px #4D7E65, 2px 4px #aee2d9;
+        text-align: center;
+    }
+    
+    .design a {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.8);
+        border-radius: 3px;
+        display: inline-block;
+        padding: 2px 8px;
+        margin-right: 3px;
+        margin-bottom: 3px;
+        opacity: 0.5;
+    }
+    
+    #design_html {
+        background-color: rgba(72, 31, 21, 0.9);
+    }
+    
+    #design_css {
+        background-color: rgba(72, 31, 21, 0.9);
+    }
+    
+    #design_scss {
+        background-color: rgba(72, 31, 21, 0.5);
+    }
+    #mail_a a{
+    	color: rgba(255,255,255,0.4);
+    }
+    #mail_a a:hover{
+		color:#42affa;
+    }
+    #blog{
+    	color: #036458;
+    	opacity: 1;
+    	font-size: 30px;
+    }
+    #blog:hover{
+		color: #008a75;
+		opacity: 0.8;
+    }
+    #mail_a1{
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    }
+    #mail_a1 a{
+    color: #036458;	
+    }
+    #mail_a1 a:hover{
+		color: #008a75;
+		opacity: 0.8;
+    }
+    </style>
+</head>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-		<style type="text/css">
-			#Avatar{
-				width: 130px;
-				height: 130px;
-				border: 1px solid #ace2d9;
-				border-radius: 50%;
-				box-sizing: border-box;
-			}
-			#pg_title{
-				text-shadow: 1px 2px #4D7E65,2px 4px #aee2d9;
-				text-align: center;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+<body>
+    <div class="reveal">
+        <div class="slides">
+<!--             <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 					<img  id="Avatar" src="300px-Lagrange_multiplier.png">
 					<h3 id="pg_title"><span style="padding: 0 30px 0 0">杨</span><span>兵</span></h3>
-					<p>
-						
+					<p style="font-size: 16px;color: rgba(255,255,255,0.7);">
+						想要变成月亮的碳基物，热爱编程，喜欢文学，愿逐步沉淀，厚积薄发
 					</p>
-					<p style="font-size: 20px;font-weight: 600;letter-spacing: 1px;">
-						前端工程师
+					<p id="mail_a" style="font-size: 20px;font-weight: 600;letter-spacing: 1px;">
+						<span style="display: block;">前端工程师</span>
+						<a style="font-size: 16px;" href="mailto:nagatoyukiloveflandre@gmail.com">nagatoyukiloveflandre@gmail.com</a>
 					</p>
-					<a href="resume.pdf">111</a>
+					<h3 style="font-size: 26px"><a href="resume.pdf">下载简历</a></h3>					
 				</section>
+            <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+                <h3 style="font-size: 50px;margin: -10px 0 10px 0;text-shadow: 1px 2px #B5533C, 2px 4px #FCB2A0;
+        text-align: center;">技术栈</h3>
+                <div class="design" style="margin-top: -10px;">
+				<a id="design_html" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">HTML5</a><a id="design_css" href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a><a id="design_scss" href="http://sass-lang.com/">SCSS</a>
+				</div>
+                <div class="design" style="margin-top: -20px;">
+                    <a style="background-color:rgba(72,31,21,0.8);" href="https://www.javascript.com/">JavaScript</a><a style="background-color:rgba(72,31,21,0.9);" href="https://angularjs.org/">AngularJs</a><a style="background-color:rgba(72,31,21,0.5);" href="https://jquery.com/">Jquery</a><a style="background-color:rgba(72,31,21,0.6);" href="http://www.bootcss.com/">Bootstrap</a>
+                </div>
+                <div class="design" style="margin-top: -20px;">
+                	<a style="background-color:rgba(72,31,21,0.4);" href="https://nodejs.org/zh-cn/">NodeJs</a><a href="https://www.python.org/" style="background-color:rgba(72,31,21,0.2);">Python</a><a href="https://www.mysql.com/" style="background-color:rgba(72,31,21,0.2);">MySQL</a>
+                </div>
+                <div class="design" style="margin-top: -20px;">
+                	<a href="https://git-scm.com/" style="background-color:rgba(72,31,21,0.4);">Git</a><a style="background-color:rgba(72,31,21,0.2);" href="webpack.github.io/docs/
+">WebPack</a>
+                </div>
+                <div class="design" style="margin: -20px 0 0 0">
+                	<a href=""></a>
+                </div>
+            </section> -->
+            <section data-transition="slide" data-background="#1DA691" data-background-transition="zoom">
+            	<h3 style="text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9;
+    text-align: center;font-size: 50px;margin: -30px 0 0 0;">关于更多</h3>
+    			<h3 style="text-decoration: none;
+    transition: 0.5s;margin: 0"><a href="https://yukiflandre.github.io/" id="blog">个人博客</a></h3>
+    			<div style="font-size: 15px" id="mail_a1"><span style="color: #036458">Email : </span><a style="font-size: 16px;" href="mailto:nagatoyukiloveflandre@gmail.com">nagatoyukiloveflandre@gmail.com</a></div>
+            </section>
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [{
+            src: 'plugin/markdown/marked.js'
+        }, {
+            src: 'plugin/markdown/markdown.js'
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }]
+    });
+    </script>
+</body>
 
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-			</div>
-		</div>
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
 </html>
